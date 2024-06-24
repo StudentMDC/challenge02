@@ -1,0 +1,111 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  color: white;
+  font-family: "Overpass", sans-serif;
+  background-color: hsl(216, 12%, 8%);
+}
+.cercle {
+  position: relative;
+  width: fit-content;
+}
+svg {
+  display: block;
+}
+.sv:hover svg{
+  background-color: white;
+  border-radius: 50%;
+}
+.cercle::after {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  bottom: -10px;
+  right: -10px;
+  background-color: hsl(217, 12%, 63%);
+  opacity: 0.3;
+  border-radius: 50%;
+  z-index: -1;
+}
+.cercle:hover::after {
+  background-color: hsl(25, 97%, 53%);
+  opacity: 1;
+}
+.card {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background-color: hsl(213, 19%, 18%);
+  border-radius: 30px;
+  width: 300px;
+  height: fit-content;
+  padding: 25px;
+}
+input {
+  outline: none;
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  color: hsl(217, 12%, 63%);
+}
+input:hover {
+  color: hsl(216, 12%, 8%);
+}
+button {
+  outline: none;
+  border: none;
+  display: block;
+  background-color: hsl(25, 97%, 53%);
+  margin-top: 30px;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 20px;
+  padding: 10px;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: hsl(216, 12%, 8%);
+
+
+}
+button:hover {
+  background-color: white;
+  color: hsl(216, 12%, 8%);
+
+}
+.flex {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+h2 {
+  font-weight: 700;
+}
+
+p {
+  font-size: 15px;
+  font-weight: 300;
+}
+a {
+  text-decoration: none;
+}
+
+.center {
+  text-align: center;
+}
+
+.fou {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
